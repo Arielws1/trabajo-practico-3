@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrar Palabras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Filtrar Lista de Palabras</h2>
+
+    <form onsubmit="filtrarPalabras(); return false;">
+        <input type="text" id="filtro" placeholder="Ingrese texto a buscar">
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <p id="mensaje" class="error"></p>
+    <ul id="listaPalabras"></ul>
+
+    <script src="Ejercicio2.js"></script>
+</body>
+
+</html>
