@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input,
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .resultado {
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .amarillo {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .verde {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .naranja {
+            background-color: #ffeeba;
+            color: #8a6d3b;
+        }
+
+        .rojo {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+
+    <script src="Ejercicios6.jsx" type="text/babel"></script>
+
+    <script type="text/babel">
+        ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+</body>
+
+</html>
