@@ -2,8 +2,6 @@ let palabras = [
     "Manzana", "Banana", "Naranja", "Pera"
 ];
 
-mostrarLista(palabras);
-
 function filtrarPalabras() {
     const entradaInput = document.getElementById('filtro');
     const entrada = entradaInput.value.trim();
@@ -11,7 +9,7 @@ function filtrarPalabras() {
     mensaje.textContent = '';
 
     if (entrada === '') {
-        mensaje.textContent = 'Por favor, ingrese una palabra para filtrar.';
+        mensaje.textContent = 'ingrese una palabra para filtrar.';
         return;
     }
 
@@ -25,7 +23,7 @@ function filtrarPalabras() {
     );
 
     mostrarLista(resultado);
-    entradaInput.value = ''; // Limpiar input si querés
+    entradaInput.value = ''; 
     }
 
 function mostrarLista(lista) {
@@ -33,7 +31,7 @@ function mostrarLista(lista) {
     ul.innerHTML = '';
 
     if (lista.length === 0) {
-        ul.innerHTML = '<li>No se encontraron coincidencias.</li>';
+        ul.innerHTML = '<li>No se encuentra coincidencias.</li>';
         return;
     }
 
