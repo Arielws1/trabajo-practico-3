@@ -4,7 +4,7 @@ const operacion = document.getElementById("operacion");
 const calcularBtn = document.getElementById("calcular");
 const resultadoDiv = document.getElementById("resultado");
 
-// Función para verificar si se debe deshabilitar el botón
+
 function verificarDivision() {
     if (operacion.value === "division" && parseFloat(num2.value) === 0) {
         calcularBtn.disabled = true;
@@ -13,11 +13,11 @@ function verificarDivision() {
     }
 }
 
-// Evento para deshabilitar el botón si corresponde
+
 num2.addEventListener("input", verificarDivision);
 operacion.addEventListener("change", verificarDivision);
 
-// Calcular operación
+
 calcularBtn.addEventListener("click", () => {
     const a = parseFloat(num1.value);
     const b = parseFloat(num2.value);
